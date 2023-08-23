@@ -1,0 +1,97 @@
+.container {
+  background-color: #5a9cf1;
+  width: 320px;
+  height: 500px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: auto;
+  background-color: #a8a8a8;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.message-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.message {
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.user-message {
+  background-color: #5a9cf1;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  max-width: 250px;
+  word-wrap: break-word;
+}
+
+.bot-message {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  max-width: 250px;
+  word-wrap: break-word;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Adicionado */
+}
+
+.input-message {
+  padding: 8px;
+  width: 100%; 
+  background-color: #ffffff;
+  border-radius:  4px 0px 0px 4px ;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+input::placeholder {
+  color: rgb(0, 0, 0);
+}
+.input-message:focus {
+  outline: none;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+button svg {
+  width: 16px;
+  height: 16px;
+  color: rgb(0, 0, 0);
+  transform: rotate(90deg);
+}
+
+.button-container {
+  display: flex; /* Adicionado */
+  align-items: center; /* Adicionado */
+  margin-left: 8px; /* Adicionado */
+}
